@@ -62,7 +62,7 @@ public class EncodeUtils {
 	        if (fileEntry.isDirectory()) {
 	        	listFilesForFolderSearchJava(fileEntry, pathsJava);
 	        } else {
-	        	if(fileEntry !=null && (fileEntry.getName().contains(".java") || fileEntry.getName().contains(".jsp") || fileEntry.getName().contains(".properties") || fileEntry.getName().contains(".css"))){
+	        	if(fileEntry !=null && (fileEntry.getName().contains(".java") || fileEntry.getName().contains(".jsp") || fileEntry.getName().contains(".properties") || fileEntry.getName().contains(".css") || fileEntry.getName().contains(".js"))){
 	        		System.out.println(fileEntry.getName());
 	        		pathsJava.add(fileEntry.getAbsolutePath());
 	        	}
